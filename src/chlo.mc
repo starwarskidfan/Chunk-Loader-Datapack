@@ -114,7 +114,7 @@ function place {
     playsound minecraft:item.lodestone_compass.lock block @a ~ ~ ~ 1 0.1
 
     setblock ~ ~ ~ minecraft:hopper{CustomName: '{"text":"Chunk Loader", "color": "yellow"}'}
-    forceload add ~ ~
+    keepchunks keepchunk current
   }
 }
 
